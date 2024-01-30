@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>globals.css</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../doc-style.css" />
+  <script src="../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../";
+    var thisFile = "app/globals.css";
+    var defaultSidebar = true;
+  </script>
+  <script src="../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>globals.css</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="css"><span class="hljs-keyword">@tailwind</span> base;
+<span class="hljs-keyword">@tailwind</span> components;
+<span class="hljs-keyword">@tailwind</span> utilities;
+
+<span class="hljs-selector-pseudo">:root</span> {
+  <span class="hljs-attribute">--foreground-rgb</span>: <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">--background-start-rgb</span>: <span class="hljs-number">214</span>, <span class="hljs-number">219</span>, <span class="hljs-number">220</span>;
+  <span class="hljs-attribute">--background-end-rgb</span>: <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>;
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">prefers-color-scheme:</span> dark) {
+  <span class="hljs-selector-pseudo">:root</span> {
+    <span class="hljs-attribute">--foreground-rgb</span>: <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>;
+    <span class="hljs-attribute">--background-start-rgb</span>: <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">--background-end-rgb</span>: <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>;
+  }
+}
+
+<span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(var(--foreground-rgb));
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    <span class="hljs-built_in">rgb</span>(var(--background-start-rgb));
+}
+
+<span class="hljs-keyword">@layer</span> utilities {
+  <span class="hljs-selector-class">.text-balance</span> {
+    <span class="hljs-attribute">text-wrap</span>: balance;
+  }
+}
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>
